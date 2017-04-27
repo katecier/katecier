@@ -1,0 +1,127 @@
+font-family: 'Amatic SC', cursive;
+font-family: 'Raleway', sans-serif;
+
+body {
+    margin: 0;
+    color: #F0FFFF;
+    font font-family: 'Raleway', sans-serif;
+
+}
+
+
+
+.waterfall, .paris, .iceland {
+    position: relative;
+    opacity: 0.75;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.waterfall {
+  height: 600px;
+
+    background-image: url("images/waterfall.jpg");
+}
+
+.paris {
+  height: 600px;
+    background-image: url("images/paris.jpg");
+}
+
+.iceland {
+    min-height: 500px;
+    background-image: url("images/iceland.jpg");
+}
+
+.hero {
+    padding: 50px 80px;
+    color: #000;
+    font-size: 15px;
+    font-family: 'Lato', sans-serif;
+    background-color: #F0FFFF;
+    text-align: center;
+    text-align: justify;
+}
+
+
+.nav ul {
+ list-style: none;
+ background-color: #444;
+ text-align: center;
+ padding: 0;
+ margin: 0;
+}
+.nav li {
+ font-family: 'Amatic SC', cursive;
+ font-size: 1.2em;
+ line-height: 40px;
+ height: 40px;
+
+}
+
+.nav a {
+ text-decoration: none;
+ color: #fff;
+ display: block;
+}
+
+.nav a:hover {
+ background-color: #005f5f;
+}
+
+.nav a.active {
+ background-color: #fff;
+ color: #444;
+ cursor: default;
+}
+
+
+ /* Option 1 - Display Inline */
+ .nav li {
+   display: inline-block;
+   margin-right: 5px;
+ }
+
+/* text in boxes over pics */
+.caption {
+    position: absolute;
+    font-family: 'Amatic SC', cursive;
+    font-size: 50px;
+    top: 40%;
+    left: 0;
+    width: 100%;
+    color: #000;
+    text-align: center;
+}
+
+.description-container {
+    position: relative;
+}
+
+.description {
+    padding: 50px 80px;
+    color: #000;
+    font-family: 'Lato', sans-serif;
+    background-color: #F0FFFF;
+    text-align: center;
+    text-align: justify;
+    text-indent: 50px;
+}
+/* box around words over pics */
+.caption span.border {
+    padding: 20px;
+    color: #f7f7f7;
+    background-color: #E00E00;
+    opacity: 100%
+    font-height: x-large;
+
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .paris, .waterfall, .iceland {
+        background-attachment: scroll;
+    }
+}
